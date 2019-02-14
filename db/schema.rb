@@ -26,6 +26,9 @@ ActiveRecord::Schema.define(version: 2019_02_14_200608) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["job_id"], name: "index_tasks_on_job_id"
+
+    end
+
   end
 
 end

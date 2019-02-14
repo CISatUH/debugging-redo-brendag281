@@ -9,9 +9,8 @@
       <th colspan="3"></th>
     </tr>
   </thead>
-
   <tbody>
-    <% @jobs.each do |job| %> //this is a loop
+    <% @jobs.each do |job| %>
       <tr>
         <td><%= job.name %></td>
         <td><%= link_to 'Show', job %></td>

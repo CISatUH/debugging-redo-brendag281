@@ -2,7 +2,7 @@ class CreateTasks < ActiveRecord::Migration[5.2]
   def change
     create_table :tasks do |t|
       t.string :name
-      #t.string :address
+      t.string :address
       t.integer :effort
       t.references :job, foreign_key: true
 
