@@ -26,6 +26,11 @@
     <%= form.collection_select(:job_id, Job.all, :id, :name)%>
   </div>
 
+  <div class="field">
+    <%= form.label :complete %>
+    <%= form.text_field :complete %>
+  </div>
+
 
   <div class="actions">
     <%= form.submit %>
