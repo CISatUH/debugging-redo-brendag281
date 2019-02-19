@@ -28,9 +28,13 @@
 
   <div class="field">
     <%= form.label :complete %>
-    <%= form.text_field :complete %>
+    <%= form.check_box :complete %>
   </div>
 
+  <div class="field">
+    <%= form.label :hours %>
+    <%= form.number_field :hours %>
+  </div>
 
   <div class="actions">
     <%= form.submit %>

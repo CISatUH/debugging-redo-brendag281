@@ -10,13 +10,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_02_18_012005) do
+ActiveRecord::Schema.define(version: 2019_02_19_051517) do
 
   create_table "jobs", force: :cascade do |t|
     t.string "name"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "location"
+    t.string "complete"
   end
 
   create_table "tasks", force: :cascade do |t|
@@ -26,6 +27,8 @@ ActiveRecord::Schema.define(version: 2019_02_18_012005) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "complete"
+    t.integer "hours"
+    t.string "days"
     t.index ["job_id"], name: "index_tasks_on_job_id"
   end
 
