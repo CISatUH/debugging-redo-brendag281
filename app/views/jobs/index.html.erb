@@ -13,7 +13,8 @@
     <% @jobs.each do |job| %>
       <tr>
         <td><%= job.name %></td>
-        <td><%= job.complete %></td>
+
+
 
         <td><%= link_to 'Show', job %></td>
         <td><%= link_to 'Edit', edit_job_path(job) %></td>
